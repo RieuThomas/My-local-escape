@@ -1,0 +1,18 @@
+body {
+    font-family: var(--second-font-family);
+    background: var(--primary-color);
+}
+
+button.btn-suggestions {
+    background: var(--linear-first-button);
+}
+
+button.btn {
+    background: var(--linear-second-button)
+}
+
+button a {
+    text-decoration: none;
+    color: var(--secondary-font-color);
+
+}

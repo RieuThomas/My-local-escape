@@ -1,9 +1,18 @@
 :root {
-    --primary-color: #F8C885 O.2;
-    --secondary-color: #F8C885 O.1;
+    --primary-color: rgba(248, 200, 133, 0.2);
+    --secondary-color: rgba(248, 200, 133, 0.1);
 
-    --primary-font-color: #E07E05;
+    --primary-font-color: rgba(224, 126, 5, 1);
+    --secondary-font-color: rgba(24, 43, 159, 1);
+    --light: white;
+    --dark: black;
 
+    --first-font-family: "Playfair Display", serif;
+    --second-font-family: "Inter", sans-serif;
 
+    --box-shadow-img: 8px 8px 4px 0px rgba(0, 0, 0, 0.25);
+    --box-shadow-btn: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
+    --linear-first-button: linear-gradient(360deg, rgba(24, 43, 159, 1) 40%, rgba(24, 43, 159, 0.64) 100%);
+    --linear-second-button: linear-gradient(360deg, rgba(224, 126, 5, 1) 40%, rgba(224, 126, 5, 0.64) 100%);
 }
