@@ -1,7 +1,31 @@
 body {
     font-family: var(--second-font-family);
-    background: var(--primary-color);
 }
+
+header h1 {
+    font-family: var(--first-font-family);
+    font-size: 4em;
+    font-weight: bold;
+    color: var(--primary-font-color);
+    width: 70%;
+    margin: auto;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 4em;
+}
+
+header nav button a {
+    text-decoration: none;
+    color: var(--secondary-font-color);
+
+}
+
+
+
+
 
 button.btn-suggestions {
     background: var(--linear-first-button);
