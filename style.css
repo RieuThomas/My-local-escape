@@ -17,15 +17,6 @@ header nav {
     padding: 1em 4em;
 }
 
-header nav button a {
-    text-decoration: none;
-    color: var(--secondary-font-color);
-
-}
-
-
-
-
 
 button.btn-suggestions {
     background: var(--linear-first-button);
@@ -37,6 +28,8 @@ button.btn {
 
 button a {
     text-decoration: none;
-    color: var(--secondary-font-color);
+    color: var(--light);
+    font-family: var(--second-font-family);
+    font-weight: bold;
 
 }
