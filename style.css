@@ -118,6 +118,10 @@ main section article p {
 }
 
 /*footer*/
+
+footer {
+    background: var(--secondary-color);
+}
 footer ul {
     display: flex;
     justify-content: space-around;
@@ -125,3 +129,4 @@ footer ul {
     height: 130px;
     padding: 10px;
 }
+
