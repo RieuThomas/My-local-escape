@@ -99,6 +99,19 @@ main section article p {
     font-size: 1.15em;
 }
 
+.section {
+    display: flex; 
+    flex-direction: column;
+}
+ section article div img {
+    height: 306.67px; 
+    width: 230px; 
+ }
+
+ section article {
+    display : flex; 
+    
+ }
 /*footer*/
 
 footer {
