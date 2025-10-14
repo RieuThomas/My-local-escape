@@ -89,6 +89,13 @@ main section {
     background: var(--primary-color);
 }
 
+main section img {
+    width: 500px;
+    height: 375px;
+    box-shadow: var( --box-shadow-img);
+    border-radius: 12px;
+}
+
 main section.section-visites{
     flex-direction: row-reverse;
     background: var(--secondary-color);
@@ -143,3 +150,7 @@ footer ul {
     padding: 10px;
 }
 
+footer ul li a img{
+    height: 50px;
+    width: 50px;
+}
