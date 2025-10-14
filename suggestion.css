@@ -48,20 +48,24 @@ header nav a {
 
 main section {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
     height: 535px;
     background: var(--primary-color);
 }
 
-main section.section-visites{
-    flex-direction: row-reverse;
-    background: var(--secondary-color);
+main section.suggestions-visites{
+    background: var(--secondary-color)   ;
 }
 
 main section article {
     width: 500px;
     height: 429px;
+}
+
+main section img.logo{
+    height: 50px;
+    width: 50px;
 }
 
 main section article button.btn {
