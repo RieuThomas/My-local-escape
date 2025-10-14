@@ -73,8 +73,9 @@ main section.suggestions-visites{
 }
 
 main section article {
-    width: 500px;
-    height: 429px;
+    width: 90%;
+    margin:auto;
+    
 }
 
 main section img.logo{
@@ -86,26 +87,14 @@ main section article button.btn {
     background: var(--linear-second-button)
 }
 
-main section article h2, main section article h3 {
-    font-family: var(--first-font-family);
-    color: var(--secondary-font-color);
+main section article h3 {
+    font-family: var(--second-font-family);
+    color: var(--light);
     font-size: 2em;
     font-weight: bold;
     
 }
 
-main section article h2::after{
-    content: "";
-    display: block;
-    background: var(--primary-font-color);
-    width: 180px;
-    margin: 16px 0px;
-    height: 4px;
-}
-
-main section article h3 {
-    font-size: 2.5em;
-}
 
 main section article p {
     height: 185px;
