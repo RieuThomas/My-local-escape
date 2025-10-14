@@ -28,6 +28,20 @@ header{
     align-items: center;
 }
 
+header img.img{
+    height: 173px;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    opacity: .5;
+    z-index: 1;
+}
+
+header >*:not(.img){
+    position: relative;
+    z-index: 2;
+}
+
 header nav {
     display: flex;
     justify-content: space-around;
