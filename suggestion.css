@@ -28,6 +28,20 @@ header{
     align-items: center;
 }
 
+header img.img{
+    height: 173px;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    opacity: .5;
+    z-index: 1;
+}
+
+header >*:not(.img){
+    position: relative;
+    z-index: 2;
+}
+
 header nav {
     display: flex;
     justify-content: space-around;
@@ -48,20 +62,24 @@ header nav a {
 
 main section {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
     align-items: center;
     height: 535px;
     background: var(--primary-color);
 }
 
-main section.section-visites{
-    flex-direction: row-reverse;
-    background: var(--secondary-color);
+main section.suggestions-visites{
+    background: var(--secondary-color)   ;
 }
 
 main section article {
     width: 500px;
     height: 429px;
+}
+
+main section img.logo{
+    height: 50px;
+    width: 50px;
 }
 
 main section article button.btn {
@@ -95,6 +113,19 @@ main section article p {
     font-size: 1.15em;
 }
 
+.section {
+    display: flex; 
+    flex-direction: column;
+}
+ section article div img {
+    height: 306.67px; 
+    width: 230px; 
+ }
+
+ section article {
+    display : flex; 
+    
+ }
 /*footer*/
 
 footer {
@@ -108,3 +139,12 @@ footer ul {
     padding: 10px;
 }
 
+footer ul li a img{
+    height: 50px;
+    width: 50px;
+}
+
+footer ul li a img.france{
+    height: 100px;
+    width: 100px;
+}
