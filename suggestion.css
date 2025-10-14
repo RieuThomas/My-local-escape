@@ -112,3 +112,12 @@ footer ul {
     padding: 10px;
 }
 
+footer ul li a img{
+    height: 50px;
+    width: 50px;
+}
+
+footer ul li a img.france{
+    height: 100px;
+    width: 100px;
+}
