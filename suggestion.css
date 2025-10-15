@@ -4,20 +4,20 @@ body {
 
 button{
     border: none;
-    border-radius: 10px;
+    border-radius: 0px 4px 4px 0px;
     box-shadow: var( --box-shadow-btn);
-    height: 47px;
-    width: 221px;
+    height: 20px;
+    width: 120px;
+    background: var(--linear-second-button);
+
 }
-
-
 
  button a {
     text-decoration: none;
     color: var(--light);
     font-family: var(--second-font-family);
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 0.8em;
 }
 
 /*header*/
@@ -26,6 +26,10 @@ header{
     height: 173px;
     display: flex;
     align-items: center;
+}
+
+header a img.logo {
+    padding-left: 20px;
 }
 
 header img.img{
@@ -63,6 +67,7 @@ header nav a {
 main section {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     height: 535px;
     background: var(--primary-color);
@@ -72,50 +77,157 @@ main section.suggestions-visites{
     background: var(--secondary-color)   ;
 }
 
-main section article {
-    width: 90%;
-    margin:auto;
-    
-}
-
 main section img.logo{
     height: 50px;
     width: 50px;
 }
 
+main section h2{
+    font-family: var(--first-font-family);
+    color: var(--primary-font-color);
+    font-size: 2em;
+    font-weight: bold;
+}
+
+main section article {
+    width: 90%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-around;   
+}
+
+
+main section article div.card{
+    display: grid;
+  place-items: center;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: var(--box-shadow-img);
+  
+}
+
+main section article div.card > *{
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+main section article div.card{
+    height: 306.67px; 
+    width: 230px; 
+}
+
+ section article div img {
+     object-fit: cover;
+    height: 306.67px; 
+    width: 230px; 
+    transition: transform 500ms ease-out;
+ }
+
+main section article div div.card-content{
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-self: flex-end;
+    background: linear-gradient(360deg,rgba(3, 1, 0, .9) 20%, rgba(3, 1, 0, 0) 100%);
+    border-radius: 12px;
+    transform: translateY(62%);
+    transition: transform 500ms ease-out;
+
+}
+
+  main section article div div div p   {
+    opacity: 0;
+    transition: transform 500ms ease-out, opacity 500ms ease-out;
+  }
+
+
 main section article button.btn {
     background: var(--linear-second-button)
 }
 
-main section article h3 {
+
+main section article div div div.card-container {
+    width: 70%;
+    padding-left: 10px;
+}
+
+main section article div div div h3 {
     font-family: var(--second-font-family);
     color: var(--light);
-    font-size: 2em;
+    font-size: 1.1em;
     font-weight: bold;
-    
+}
+
+main section article div div div h3::after{
+    content: "";
+    display: block;
+    position: relative;
+    left: -10px;
+    width: 80%;
+    height: 4px;
+    margin: 5px 0px 5px 0px;
+    background: var(--primary-font-color);
+}
+
+main section article div div div h3::after,
+main section article div div button{
+    opacity: 0;
+    transform: scaleX(0);
+    transition: opacity 1000ms ease-in, transform 500ms ease-out;
+    transition-delay: 500ms;
+    transform-origin: left;
 }
 
 
-main section article p {
-    height: 185px;
-    padding: 40px 0px;
-    font-size: 1.15em;
+main section article div div div p {
+    color: var(--light);
+    font-size: .6em;
+    line-height: 1.2;
 }
 
-.section {
-    display: flex; 
-    flex-direction: column;
-}
- section article div img {
-    height: 306.67px; 
-    width: 230px; 
- }
+/*on hover on the card section*/
 
- section article {
-    display : flex; 
-    
- }
+  .card:hover .card-content {
+    transform: translateY(0);
+    transition: all 500ms ease-in;
+  }
+
+.card:hover .card-container > p {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+    transition-delay: 500ms;
+  }
+ 
+  .card:hover img{
+    transform: scale(1.2);
+  }
+
+  .card:hover h3::after,
+  .card:hover .card-content button{
+    opacity: 1;
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: all 1s ease-in;
+    transition-delay: 500ms;
+  }
+
+  .card:hover {
+    scale: 1.05;
+    transition: all 500ms ease-in
+  }
+
 /*footer*/
+
+footer::before{
+    content: "";
+    display: block;
+    background: var(--secondary-font-color);
+    width: 80%;
+    margin: auto;
+    height: 5px;
+
+}
 
 footer {
     background: var(--secondary-color);
