@@ -25,6 +25,9 @@ button{
 header{
     height: 100vh;
     width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(4,1fr);
 }
 
 header img.img{
@@ -33,7 +36,7 @@ header img.img{
     position: absolute;
     object-fit: cover;
     opacity: .5;
-    z-index: 1;
+
 }
 
 header >*:not(.img){
@@ -45,12 +48,16 @@ header nav {
     display: flex;
     justify-content: space-between;
     padding: 1em 4em;
+    grid-row: 1/1;
+    grid-column: 5/6;
+    align-self: center;
 }
 
-header nav img {
-    height: 145px;
-    width: 160px;
-
+header img.logo {
+    grid-row: 1/1;
+    grid-column: 1/1;
+    padding-left: 60px;
+    padding-top: 20px;
 }
 
 header nav button.btn-suggestions {
@@ -61,29 +68,22 @@ header nav button a {
     font-size: 1.2em;
 }
 
-header div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: calc(100vh - 200px);
-    padding-bottom: 20px;
-    width: 65%;
-    margin: auto;
-
-}
-
 header h1 {
     font-family: var(--first-font-family);
     font-size: 4em;
     font-weight: bold;
     color: var(--primary-font-color);
+    grid-row: 2/2;
+    grid-column: 2/4;
 }
 
-header div p.hero-text {
+header p.hero-text {
     font-family: var(--first-font-family);
     font-size: 1.8em;
     line-height: 1.5;
     font-weight: bold;
+    grid-row: 4/4;
+    grid-column: 2/5;
     
 }
 
