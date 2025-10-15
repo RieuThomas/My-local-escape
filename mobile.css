@@ -1,0 +1,43 @@
+ .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .img {
+    display: none; /* ou adapte à ta mise en page */
+  }
+
+  .nav {
+    order: 1;
+  }
+
+  .logo {
+    display: block;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .hero-title {
+    order: 2;
+    font-size: 1.8rem;
+  }
+
+  .hero-text {
+    order: 3;
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .btn-suggestions {
+    order: 4;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  .btn-suggestions a {
+    text-decoration: none;
+    color: white;
+  }
