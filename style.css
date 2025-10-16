@@ -10,6 +10,11 @@ button{
     width: 221px;
 }
 
+button:hover{
+    scale: 1.1;
+    transition: all 500ms ease-in-out;
+}
+
 
 
  button a {
@@ -104,6 +109,11 @@ main section img {
     border-radius: 12px;
 }
 
+main section img:hover{
+    scale: 1.1;
+    transition: all 500ms ease-in-out;
+}
+
 main section.section-visites{
     flex-direction: row-reverse;
     background: var(--secondary-color);
@@ -113,6 +123,7 @@ main section article {
     width: 500px;
     height: 429px;
 }
+
 
 main section article button.btn {
     background: var(--linear-second-button)
@@ -176,4 +187,9 @@ footer ul li a img{
 footer ul li a img.france{
     height: 100px;
     width: 100px;
+}
+
+footer ul li a img:hover{
+scale: 1.3;
+transition: all 500ms ease-in-out;
 }

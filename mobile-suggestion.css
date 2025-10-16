@@ -7,12 +7,26 @@
     flex-direction: column;
     justify-content: flex-start;
     gap: 20px;
-    height: 100vh;
+    height: 200px;
   }
+header a img.logo {
+  padding-top: 20px;
+  padding-right: 60px;
+    max-width: 100px;
+}
 
   header img.img{
-    height: 100vh;
+    height: 200px;
   }
+
+  header:has(#burger-toggle:checked),
+  header:has(#burger-toggle:checked) .img{
+    height: 100vh;
+    transition: all 500ms ease-in-out;
+  }
+
+  header:has(#burger-toggle:checked) 
+
 
   header nav  {
     display: flex;
@@ -22,6 +36,7 @@
 
     header nav label.burger {
     display: block;
+    transition: all 500ms ease;
   }
 
 header nav ul.nav-links {
@@ -32,7 +47,8 @@ header nav ul.nav-links {
   left: 50%;
   transform: translateX(-50%);
   width: 300px;
-  display: none;
+  opacity: 0;
+ 
 }
 
   header nav ul.nav-links li {
@@ -43,9 +59,11 @@ header nav ul.nav-links {
     gap: 10px;
   }
 
-  #burger-toggle:checked ~ .nav-links {
-    display: flex;
+  header:has(#burger-toggle:checked) .nav-links {
+    opacity: 1;
+    transition: all 1s  ease-in-out;    
   }
+
 
   header nav ul img{
     display: block;
@@ -107,4 +125,11 @@ main section article div div button{
     height: 80px;
     width: 80px;
   }
+
+  
+footer ul li a img:hover{
+transition: none;
+scale: none;
+}
+
 }
