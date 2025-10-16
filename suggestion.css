@@ -25,6 +25,7 @@ button{
 header{
     height: 173px;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -46,11 +47,29 @@ header >*:not(.img){
     z-index: 2;
 }
 
-header nav {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    padding: 1em 4em;
+header nav ul.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav ul img{
+    display: none;
+}
+
+header nav ul.nav-links li {
+  margin-right: 150px;
+}
+
+header nav label.burger {
+  font-size: 28px;
+  color: var(--secondary-font-color);
+  display: none;
+  cursor: pointer;
+}
+
+header nav input#burger-toggle {
+  display: none;
 }
 
 header nav a {
@@ -61,15 +80,22 @@ header nav a {
     font-size: 1.4em;
 }
 
+header nav a:hover{
+    text-decoration: underline;
+    color: var(--secondary-font-color);
+}
+
+
 
 /*main*/
 
 main section {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 535px;
+    gap: 30px;
     background: var(--primary-color);
 }
 
@@ -96,7 +122,6 @@ main section article {
     justify-content: space-around;   
 }
 
-
 main section article div.card{
     display: grid;
   place-items: center;
@@ -117,7 +142,7 @@ main section article div.card{
 }
 
  section article div img {
-     object-fit: cover;
+    object-fit: cover;
     height: 306.67px; 
     width: 230px; 
     transition: transform 500ms ease-out;
@@ -139,6 +164,9 @@ main section article div div.card-content{
   main section article div div div p   {
     opacity: 0;
     transition: transform 500ms ease-out, opacity 500ms ease-out;
+    color: var(--light);
+    font-size: .6em;
+    line-height: 1.2;
   }
 
 
@@ -180,11 +208,6 @@ main section article div div button{
 }
 
 
-main section article div div div p {
-    color: var(--light);
-    font-size: .6em;
-    line-height: 1.2;
-}
 
 /*on hover on the card section*/
 
