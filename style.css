@@ -129,7 +129,7 @@ main section article button.btn {
     background: var(--linear-second-button)
 }
 
-main section article h2, main section article h3 {
+main section article h2, main section article h3 a {
     font-family: var(--first-font-family);
     color: var(--secondary-font-color);
     font-size: 2em;
@@ -146,8 +146,13 @@ main section article h2::after{
     height: 5px;
 }
 
-main section article h3 {
+main section article h3 a {
     font-size: 2.5em;
+}
+
+main section article h3 a {
+    text-decoration: none;
+
 }
 
 main section article p {
