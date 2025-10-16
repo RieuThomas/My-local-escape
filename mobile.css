@@ -76,10 +76,12 @@
   height: 4px;
  }
 
-  main section article h3 {
-    font-size:1.25em;
-    text-align: center;
- 
+ main section article h3{
+  text-align: center;
+ }
+
+  main section article h3 a{
+    font-size:1.25em; 
   }
 
   main section article h3.subtitle-gastronomie::after{
