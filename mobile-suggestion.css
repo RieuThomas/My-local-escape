@@ -1,0 +1,110 @@
+@media screen and (max-width: 320px) {
+
+/*header*/
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    height: 100vh;
+  }
+
+  header img.img{
+    height: 100vh;
+  }
+
+  header nav  {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+    header nav label.burger {
+    display: block;
+  }
+
+header nav ul.nav-links {
+  flex-direction: column;
+  background-color: #33333300;
+  position: absolute;
+  top: 60px; /* juste sous le navbar */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  display: none;
+}
+
+  header nav ul.nav-links li {
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #burger-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+
+  header nav ul img{
+    display: block;
+    height: 30px;
+    width: 30px;
+}
+
+/*main*/
+
+  main section h2{
+    font-size: 1.8em;
+  }
+
+  main section article {
+    overflow-x: auto;  /* scroll horizontal */
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* pour iOS */
+    gap: 1rem;
+
+  }
+
+  main section article div.card {
+    flex: 0 0 80%; /* chaque carte prend 80% de la largeur */   
+    margin: 1.4rem;
+  }
+
+  main section article div div.card-content{
+    transform: translateY(0%);
+  }
+
+  main section article div div div p{
+    opacity: 1;
+  }
+
+main section article div div div h3::after,
+main section article div div button{
+    opacity: 1;
+    transform: none;
+}
+
+/* supression card effect*/
+
+.card:hover {
+  scale: none;
+}
+
+.card:hover img{
+  transform: none;
+}
+
+/*footer*/
+
+    footer ul li a img {
+    height: 34px;
+    width:34px;
+  }
+
+  footer ul li a img.france{
+    height: 80px;
+    width: 80px;
+  }
+}
