@@ -128,7 +128,8 @@
   }
 
   main section article button{
-   margin-left:calc(75vw - 150px);
+   display: block;
+   margin: 0 auto;
   }
 
   main section article button a {
